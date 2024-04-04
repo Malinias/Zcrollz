@@ -5,13 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zcrollz</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background-color: #ffdd00; /* Set background color to yellow */
+        }
+        main {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            padding-top: 20px;
+        }
+        .video {
+            max-width: 600px;
+            margin-top: 20px;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: transparent;
+            border: none;
+        }
+        .like-button {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <!-- Navigation bar -->
-        <!-- Logo, links, search bar, etc. -->
-        <nav>
-            <!-- Navigation links, logo, search bar, etc. -->
+        <nav class="navbar">
+            <img src="logo.png" alt="Logo" width="150"> <!-- Replace with your logo -->
+            <div>
+                <input type="text" placeholder="Insert Sign In Page URL"> <!-- Insert sign in page URL -->
+                <button onclick="window.location.href = 'YOUR_SIGN_IN_PAGE_URL'">Sign In</button> <!-- Replace with your sign in page URL -->
+            </div>
         </nav>
     </header>
     <main>
@@ -22,6 +52,9 @@
                 <source src="video.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
+            <div class="like-button">
+                <img src="like_button.png" alt="Like Button" width="30"> <!-- Replace with your like button image -->
+            </div>
             <div class="video-info">
                 <!-- Video information (user, likes, comments, etc.) -->
             </div>
