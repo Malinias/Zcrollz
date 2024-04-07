@@ -19,16 +19,16 @@
             height: 100vh; /* Set main container height to viewport height */
             padding-top: 20px;
         }
-                .video {
+             .video {
             width: 90vw; /* Set width to fill 90% of viewport width */
-            height: auto; /* Auto height to maintain aspect ratio */
+            height: calc(90vw * 16 / 9); /* Calculate height based on 9:16 aspect ratio */
             margin-bottom: 20px; /* Add margin to separate from like button */
+            position: relative; /* Make position relative for absolute positioning of like button */
         }
 
-        }
         .like-button {
-            position: absolute;
-            bottom: 20px; /* Adjust bottom distance */
+            position: absolute; /* Position like button absolutely */
+            bottom: 10px; /* Set distance from bottom */
             left: 50%; /* Center horizontally */
             transform: translateX(-50%); /* Center horizontally */
         }
